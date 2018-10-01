@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="p-3">
+        <table class="table-sm table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Article Title
+                    </th>
+                    <th>
+                       # views
+                    </th>
+                    <!--<th>
+                        view article
+                    </th>-->
+
+                </tr>
+            </thead>
+            {% for slug in slugs %}
+                <tr>
+                    <td>{{ slug[1] }}</td>
+                    <td>{{ slug[2] }}</td>
+                    <!--<td><a href='/view_article/{{slug[0]}}'>view</a></td>-->
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

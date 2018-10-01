@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="p-3">
+        <table class="table-sm table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Author Name
+                    </th>
+                    <th>
+                       # views
+                    </th>
+                </tr>
+            </thead>
+            {% for author in authors %}
+                <tr>
+                    <td>{{ author[0] }}</td>
+                    <td>{{ author[1] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
