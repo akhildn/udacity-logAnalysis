@@ -16,7 +16,7 @@
             {% for error in errors %}
                 <tr>
                     <td>{{ error[0] }}</td>
-                    <td>{{ error[1] }}</td>
+                    <td>{{ error[1]|round(2,'floor')  }}</td>
                 </tr>
             {% endfor %}
         </table>
