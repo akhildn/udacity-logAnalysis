@@ -17,7 +17,7 @@ Tables in database:
 
 	
 | Column |           Type           |                       Modifiers                      |
-|-------+|-------------------------+|------------------------------------------------------|
+|--------|--------------------------|------------------------------------------------------|
 | author | integer                  | not null                                             |
 | title  | text                     | not null						   |
 | slug   | text                     | not null						   |
@@ -35,11 +35,11 @@ Foreign-key constraints:
 	
 2. authors: contains thier name and thier bio
 
-| Column |  Type   |                      Modifiers                      |
-|-------+|--------+|-----------------------------------------------------|
- name   | text     | not null						 |
- bio    | text     |                                                     |  
- id     | integer  | not null default nextval('authors_id_seq'::regclass)|
+| Column |  Type    |                      Modifiers                       |
+|--------|----------|------------------------------------------------------|
+| name   | text     | not null						  |
+| bio    | text     |                                                     |  
+| id     | integer  | not null default nextval('authors_id_seq'::regclass)|
 
 `Indexes:
     "authors_pkey" PRIMARY KEY, btree (id)
@@ -50,7 +50,7 @@ Referenced by:
 3. log: contains info about all requests made to the articles 
 
 | Column |           Type           |                    Modifiers                    |
-|-------+--------------------------+|-------------------------------------------------|
+|--------|--------------------------|-------------------------------------------------|
 | path   | text                     |                                                 |
 | ip     | inet                     |                                                 |
 | method | text                     |                                                 |
