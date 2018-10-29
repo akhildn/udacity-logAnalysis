@@ -2,8 +2,7 @@
 
 ## Description
 	
-	Developed as a part of course work in udacity full stack web development nanodegree. Task given was to develop an internal reporting tool 
-which will use the information from  the database which has over a million rows. 
+Developed as a part of course work in udacity full stack web development nanodegree. Task given was to develop an internal reporting tool which will use the information from  the database which has over a million rows. 
 
 Queries were writtern to find out:
 	1. Top 3 articles with most views
